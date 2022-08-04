@@ -1,2 +1,2 @@
 # Dyslexia-simulator---Omar-Poletti
-simulateur de syslexie 
+simulateur de dyslexie 
