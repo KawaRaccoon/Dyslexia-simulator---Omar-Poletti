@@ -30,7 +30,7 @@ loadSprite("player3", "player_blue.jpg");
 loadSprite("level1", "level 1.png")
 loadSprite("door", "door.jpg")
 loadSprite("door_white", "door_white.jpg");
-loadSprite("vanita", "vanità.png")
+loadSprite("vanita", "vanita.png")
 loadSprite("cow1", "cow.jpg");
 loadSprite("cow2", "incomprehensible cow.png")
 loadSprite("enemy1", "enemy-black.png");
