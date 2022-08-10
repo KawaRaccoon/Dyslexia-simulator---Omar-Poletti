@@ -41,7 +41,7 @@ loadSprite('angryProfessorBlack', "angryProfessorBlack.jpg")
 loadSprite("happyProfessorBlack","happyProfessorBlack.jpg");
 loadSprite("angryProfessorLevel3","angryProfessorLevel3.png")
 loadSprite("candy", "candy.png")
-// Game Summary : 
+
 
 //   The game has four levels or scenes : 
 //    1 - Level 0 
@@ -50,7 +50,6 @@ loadSprite("candy", "candy.png")
 //    4 - Level 3 
 
 
-// This is our first interface scene : 
 
 // The Interface scene is here : 
 
@@ -76,7 +75,7 @@ scene("interface", () => {
 
 go('interface');
 
-// Creating the Game Over scene here : 
+// Game Over scene: 
 
 scene("gameover", () => {
     wait(3,()=>{
@@ -172,11 +171,11 @@ scene("gameLevel0", () => {
         "=========================================                                                   =======",
     ]
     let firstMapConfig = {
-        // This here holds all our map configs : 
-        // Define the size of each block
+        //  map configs : 
+        //  size of each block
         width: 32,
         height: 32,
-        // Define what each symbol means, by a function returning a component list (what will be passed to add())
+        // symbol means
         "=": () => [
             rect(20, 20),
             color(56, 155, 0),
@@ -194,17 +193,17 @@ scene("gameLevel0", () => {
             solid(),
             body(),
             scale(0.2),
-            // This is our custom component : 
+            //  custom component : 
             enemiesMove(),
             health(2),
             "danger",
         ],
     }
-    // Making our enemies move with this logic here : 
+    //  enemies move logic : 
     function enemiesMove(distance = 330, speed = 80, dir = 1) {
         return {
             id: "enemiesMove",
-            // This means that this functin requires these components : 
+            // functin requires these components : 
             require: ["pos", "area",],
             startingPos: vec2(0, 0),
             add() {
@@ -223,7 +222,7 @@ scene("gameLevel0", () => {
             },
         };
     }
-    // Now that we have our map and its configure we can add this level to our scene : 
+    
     // Adding first level : 
     addLevel(firstMap, firstMapConfig)
     background.play()
@@ -266,7 +265,7 @@ scene("gameLevel0", () => {
     const PLAYER_HEIGHT = 25;
     const BULLET_SPEED = 200;
     let flipX;
-    // First lets create our player sprite : 
+    // player sprite : 
     const player = add([
         // rect(PLAYER_WIDTH, PLAYER_HEIGHT),
         sprite("player2"),
@@ -297,9 +296,8 @@ scene("gameLevel0", () => {
             player.jump();
         }
     })
-    // Event to fire the bullet is here : 
-    // Defining our bullet here just so that it doesn't give us the error that bullet is undefined because we can't press 
-    // a before the game starts :  
+    // Event to fire the bullet : 
+    // Defining our bullet :  
     let bullet = add([
         rect(10, 10),
         area(),
@@ -326,7 +324,7 @@ scene("gameLevel0", () => {
             }
         })
     })
-    // Here we are saying that wherever the player will go the camera position will go with him : 
+    //  camera position follow the player : 
     // action runs every frame : 
     onUpdate(() => {
         camPos(player.pos);
