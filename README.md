@@ -11,18 +11,18 @@ un deuxième niveau montrera, pendant un temps très court, une image. Le joueur
 ### screen
 ![image](https://user-images.githubusercontent.com/105658013/183978733-48861841-f179-4ffb-92dc-bc8a11e6c318.png)
 
-#### procédure d'installation requise
+### procédure d'installation requise
 1) télécharger le répertoire. 
 2) ouvrir répertoire sur la machine et sur VisualStudioCode
 3) installer extension liveServer sur VisualStudioCode
 4)ouvrir fichier index.html avec « liveserver »
 
-##### modules, librairies ou scripts intégrés ou nécessaires 
+### modules, librairies ou scripts intégrés ou nécessaires 
 Le jeu utilise javascript et le programme 'Visual Studio Code' et la bibliothèque 'Kaboom' ont été utilisés pour sa réalisation, même si une grande partie des assets graphiques ont été conçus par moi-même. 
 
-###### le contexte de développement
+### le contexte de développement
 Ce projet a été développé dans le cadre du cours « Développement de jeux vidéo 2D » dispensé par Isaac Pante (SLI, Lettres, UNIL).
 
 
 
-Jouez au jeu [ici](https://kawaraccoon.github.io/Dyslexia-simulator---Omar-Poletti/dislessia%202/)
+##### Jouez au jeu [ici](https://kawaraccoon.github.io/Dyslexia-simulator---Omar-Poletti/dislessia%202/)
