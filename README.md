@@ -20,7 +20,7 @@ Le dernier niveau, l'examen final, montrera une image difficile à déchiffrer. 
 1) télécharger le répertoire. 
 2) ouvrir répertoire sur la machine et sur VisualStudioCode
 3) installer extension liveServer sur VisualStudioCode
-4)ouvrir fichier index.html avec « liveserver »
+4) ouvrir fichier index.html avec « liveserver »
 
 
 ### modules, librairies ou scripts intégrés ou nécessaires 
