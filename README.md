@@ -22,6 +22,7 @@ Le dernier niveau, l'examen final, montrera une image difficile à déchiffrer. 
 3) installer extension liveServer sur VisualStudioCode
 4)ouvrir fichier index.html avec « liveserver »
 
+
 ### modules, librairies ou scripts intégrés ou nécessaires 
 Le jeu utilise javascript et le programme 'Visual Studio Code' et la bibliothèque 'Kaboom' ont été utilisés pour sa réalisation, même si une grande partie des assets graphiques ont été conçus par moi-même. 
 
