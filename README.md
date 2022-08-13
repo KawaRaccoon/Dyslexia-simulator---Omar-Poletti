@@ -1,5 +1,5 @@
 # Dyslexia-simulator---Omar-Poletti
-simulateur de dyslexie
+simulateur de dyslexie. 
 
 ## description du projet et de ses fonctionnalités
 
