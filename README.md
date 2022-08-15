@@ -8,7 +8,9 @@ Ce projet vise à simuler, de manière très introductive et simple, les difficu
 la structure du jeu : 
 il y aura un niveau préliminaire dans lequel un élève devra se rendre à l'école en surmontant d'abord 2 brutes qui se mettront sur son chemin. 
 Une fois à l'école, dans un premier niveau (ou leçon), un texte lu par un dyslexique sera simulé.  Le joueur devra écrire la phrase correcte sans fautes dans la case sous le tableau et une fois qu'il aura écrit sa réponse, il devra cliquer avec le mouse à l'extérieur de la case pour confirmer sa réponse. 
+
 Un deuxième niveau montrera, pendant un temps très court, une image. Le joueur devra choisir, parmi différents titres, celui qui correspond le mieux à l'image qu'il vient de voir. Une fois la réponse sélectionnée, le joueur pourra regarder l'image de plus près et savoir si le titre choisi était suffisamment pertinent pour l'image ou non. De cette manière, le joueur abordera le concept de la relativité et des difficultés d'interprétation et de perception.
+
 Le dernier niveau, l'examen final, montrera une image difficile à déchiffrer. Le joueur devra écrire, dans une case à côté de l'image, ce qu'il voit. Le niveau ne sera réussi qu'en écrivant le mot correct qui représente l'image.  Ce niveau, comme le précédent, présente une difficulté d'interprétation qui ne s'éclaire qu'au moyen de lignes directrices indiquant les contours de l'image. 
 
 
