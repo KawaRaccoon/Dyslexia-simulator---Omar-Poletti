@@ -386,7 +386,7 @@ scene("gameLevel0", () => {
  
          //     THE RIGHT ANSWER FOR LEVEL 1 IS HERE : 
 
-// Come on. said Betsy We have to pick up this corn. We don't have another can of popcorn.
+// Come on - said Betsy - We have to pick up this corn. We don't have another can of popcorn.
 scene("gameLevel1", () => {
     let right;
     let destroyedTimer = false;
@@ -414,7 +414,7 @@ scene("gameLevel1", () => {
         }
     });
 
-    // This is will spawn the angry Professor when the time runs out : 
+    // spawn the donkey when the time runs out : 
     wait(time,()=>{
         // if the time runs out then : 
         textarea.style.display = "none"
@@ -462,6 +462,33 @@ scene("gameLevel1", () => {
         color(255, 255, 255,),
         ])
     })
+
+    wait(10, () => {
+        add([text("Remember: as a dyslexic you misread what is written."),
+        pos(50, 60),
+        lifespan ( 10, {fade : 0.8}),
+        scale(3),
+        color (255, 255, 255),
+        ])
+    })
+    wait(10, () => {
+        add([text("the letters 'p', 'q', 'd' and 'b' are reversed and the"),
+        pos(50, 100),
+        lifespan ( 10, {fade : 0.8}),
+        scale(2.8),
+        color (255, 255, 255),
+        ])
+    })
+
+    wait(10, () => {
+        add([text("sentences are disconnected where they should be connected"),
+        pos(22, 140),
+        lifespan ( 10, {fade : 0.8}),
+        scale(2.8),
+        color (255, 255, 255),
+        ])
+    })
+   
     // Our Map is here : 
     let secondMap = [
         "!                          !",
@@ -558,7 +585,7 @@ scene("gameLevel1", () => {
         "incorrect"
     ])
 
-    // Some Vanilla Javascript Code here : 
+  
     // Creating a textarea : 
     let textarea = document.createElement('textarea');
     document.body.appendChild(textarea);
@@ -588,6 +615,12 @@ scene("gameLevel1", () => {
             destroy(incorrectWords);
             add([text("Go to the door to go to the next Level"),
             pos(300, 100),
+            lifespan(6, { fade: 0.1 }),
+            scale(2),
+            color(255, 255, 255,)
+            ])
+            add([text("sometimes the best gift you can give to a dyslexic is the gift of time"),
+            pos(150, 365),
             lifespan(6, { fade: 0.1 }),
             scale(2),
             color(255, 255, 255,)
@@ -719,12 +752,14 @@ scene("gameLevel2", () => {
     wait(3,()=>{
         destroy(thisText)
         let thisTextToo = add([
-            text("You must give a title to this picture"),
-            pos((width()/2) - 450, 100,{fade:0.8}),
+            text("choose the most appropriate title for the image."),
+            pos((width()/2) - 600, 100,{fade:0.8}),
             "thisTextToo",
             scale(3)
         ])  
     })
+
+    
     // Defining some game constants for our player : 
     const PLAYER_SPEED = 200;
     let flipX;
@@ -739,7 +774,7 @@ scene("gameLevel2", () => {
         area(),
         "player"
     ])
-    //  This means you can only move when you answer the question It doesn't matter if it is right or wrong . You would still be able to go to the next level .
+    //   You would still be able to go to the next level no matter if the answer is true or false.
 
 wait(5,()=>{
     let skull = add([
@@ -777,9 +812,21 @@ wait(4, () => {
             destroy(option4Box)
             destroy(option3Box)
             let EndingText = add([
-                text("This level shows what the Perceptual Difficulties are."),
+                text("This levels shows what the Perceptual Difficulties are."),
                 pos(20,450),
                 scale(2.6)
+            ])
+            add([
+                text("but don't worry,"),
+                pos(20, 300),
+                scale(3.2),
+                
+            ])
+            add([
+                text("you were supposed to lose"),
+                pos(20, 350),
+                scale(3),
+                
             ])
             add([
                 text("Look Closely"),
@@ -1092,7 +1139,7 @@ scene("gameLevel3", () => {
             scale(0.9)
         ])
       
-        // Creating an input tag to take input from the user : ( Vanilla Javascript )
+        // Creating an input tag to take input from the user : 
 
         let input = document.createElement('input');
         input.id = "myinput"
@@ -1190,10 +1237,35 @@ scene("gameLevel3", () => {
                 ])
                 add([
                     text("Press any key to go back to the game. "),
-                    pos(290, 400),
+                    pos(290, 500),
                     color(255, 255, 255),
                     scale(3)
                 ])
+                add([
+                    text("As a dyslexic, you have experienced the perceptual difficulties involved "),
+                    pos(20, 380),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("in processing an image. as a dyslexic, the understanding of the image is"),
+                    pos(20, 410),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("given by the guidelines offered by the educator, as you see in the picture"),
+                    pos(20, 440),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("above"),
+                    pos(580, 470),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+
                 add([
                     text("It's a COW"),
                     pos(150, 300),
@@ -1214,9 +1286,9 @@ scene("gameLevel3", () => {
 
                 add([
                     text("---End of Game---"),
-                    pos((width() / 2) - 550, 520),
+                    pos((width() / 2) - 550, 550),
                     color(255, 0, 0),
-                    scale(8)
+                    scale(7)
                 ])
             }
         })
