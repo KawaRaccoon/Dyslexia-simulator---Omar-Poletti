@@ -386,7 +386,7 @@ scene("gameLevel0", () => {
  
          //     THE RIGHT ANSWER FOR LEVEL 1 IS HERE : 
 
-// Come on - said Betsy - We have to pick up this corn. We don't have another can of popcorn.
+// Come on - said Betsy - We have to pick up this corn. We don't have another can of popcorn
 scene("gameLevel1", () => {
     let right;
     let destroyedTimer = false;
@@ -397,7 +397,7 @@ scene("gameLevel1", () => {
     ])
 
     // Our timer code is here : 
-    let time = 60;
+    let time = 100;
     const timer = add([
         text(time),
         pos(600, 20),
@@ -812,8 +812,13 @@ wait(4, () => {
             destroy(option4Box)
             destroy(option3Box)
             let EndingText = add([
-                text("This levels shows what the Perceptual Difficulties are."),
-                pos(20,450),
+                text("This levels shows what the Perceptual Difficulties are"),
+                pos(20,440),
+                scale(2.6)
+            ])
+            add([
+                text("for a dyslexic person"),
+                pos(20, 460),
                 scale(2.6)
             ])
             add([
@@ -828,6 +833,13 @@ wait(4, () => {
                 scale(3),
                 
             ])
+
+            add([
+                text("the right answer is Beauty"),
+                pos(20, 380),
+                scale(3),
+            ])
+
             add([
                 text("Look Closely"),
                 pos(100, 100),
@@ -909,8 +921,13 @@ wait(4, () => {
             destroy(option4Box)
             destroy(option3Box)
             let endingText = add([
-                text("This level shows what the Perceptual Difficulties are."),
+                text("This level shows what the Perceptual Difficulties are"),
                 pos(10,400),
+                scale(2.6)
+            ])
+            add([
+                text("for a dyslexic person"),
+                pos(20, 460),
                 scale(2.6)
             ])
             add([
@@ -975,9 +992,32 @@ wait(4, () => {
             destroy(option4Box)
             destroy(option3Box)
             let EndingText = add([
-                text("This level shows what the Perceptual Difficulties are."),
-                pos(20,450),
+                text("This level shows what the Perceptual Difficulties are"),
+                pos(20,440),
                 scale(2.6)
+            ])
+            add([
+                text("for a dyslexic person"),
+                pos(20, 460),
+                scale(2.6)
+            ])
+
+            add([
+                text("but don't worry,"),
+                pos(20, 300),
+                scale(3.2),
+                
+            ])
+            add([
+                text("you were supposed to lose"),
+                pos(20, 350),
+                scale(3),
+                
+            ])
+            add([
+                text("the right answer is Beauty"),
+                pos(20, 380),
+                scale(3),
             ])
             add([
                 text("Look Closely"),
@@ -1046,9 +1086,33 @@ wait(4, () => {
             destroy(option4Box)
             destroy(option3Box)
             let EndingText = add([
-                text("This level shows what the Perceptual Difficulties are."),
-                pos(20,450),
+                text("This level shows what the Perceptual Difficulties are"),
+                pos(20,440),
                 scale(2.6)
+            ])
+            add([
+                text("for a dyslexic person"),
+                pos(20, 460),
+                scale(2.6)
+            ])
+
+            add([
+                text("but don't worry,"),
+                pos(20, 300),
+                scale(3.2),
+                
+            ])
+            add([
+                text("you were supposed to lose"),
+                pos(20, 350),
+                scale(3),
+                
+            ])
+            add([
+                text("the right answer is Beauty"),
+                pos(20, 380),
+                scale(3),
+                
             ])
             add([
                 text("Look Closely"),
@@ -1187,9 +1251,34 @@ scene("gameLevel3", () => {
                     pos(800, 160),
                     scale(0.8)
                 ])
+
+                add([
+                    text("As a dyslexic, you have experienced the perceptual difficulties involved "),
+                    pos(20, 380),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("in processing an image. As a dyslexic, the understanding of the image is"),
+                    pos(20, 410),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("given by the guidelines offered by the educator, as you see in the picture"),
+                    pos(20, 440),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
+                add([
+                    text("above"),
+                    pos(580, 470),
+                    color(255, 255, 255),
+                    scale(2.15)
+                ])
                 add([
                     text("Press any key to go back to the game. "),
-                    pos(290, 400),
+                    pos(290, 500),
                     color(0, 0, 255),
                     scale(3)
                 ])
@@ -1199,17 +1288,17 @@ scene("gameLevel3", () => {
                     go("gameLevel0")
                 })
                 add([
-                    text("You have sharp eyes."),
-                    pos(300, 450),
+                    text("You have sharp eyes"),
+                    pos(20, 200),
                     scale(3)
                 ])
                 //  End of Game Text here : 
 
                 add([
                     text("---End of Game---"),
-                    pos((width() / 2) - 550, 520),
+                    pos((width() / 2) - 550, 550),
                     color(255, 0, 0),
-                    scale(8)
+                    scale(7)
                 ])
             }
             else {
@@ -1248,7 +1337,7 @@ scene("gameLevel3", () => {
                     scale(2.15)
                 ])
                 add([
-                    text("in processing an image. as a dyslexic, the understanding of the image is"),
+                    text("in processing an image. As a dyslexic, the understanding of the image is"),
                     pos(20, 410),
                     color(255, 255, 255),
                     scale(2.15)
