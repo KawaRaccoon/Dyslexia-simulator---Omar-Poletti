@@ -5,7 +5,7 @@ simulateur de dyslexie.
 
 Ce projet vise à simuler, de manière très introductive et simple, les difficultés perceptives rencontrées par de nombreux enfants atteints de dyslexie. La dyslexie est un phénomène très vaste et l'aborder dans toute sa complexité serait certainement compliqué. C'est pourquoi un tel ouvrage n'a pas pour but de simuler la dyslexie dans sa globalité, mais seulement de simuler, à travers trois exercices simples, ce que peuvent être les difficultés perceptives. 
 
-#####la structure du jeu : 
+##### la structure du jeu : 
 il y aura un niveau préliminaire dans lequel un élève devra se rendre à l'école en surmontant d'abord 2 brutes qui se mettront sur son chemin. 
 Une fois à l'école, dans un premier niveau (ou leçon), un texte lu par un dyslexique sera simulé.  Le joueur devra écrire la phrase correcte sans fautes dans la case sous le tableau et une fois qu'il aura écrit sa réponse, il devra cliquer avec le mouse à l'extérieur de la case pour confirmer sa réponse. 
 
