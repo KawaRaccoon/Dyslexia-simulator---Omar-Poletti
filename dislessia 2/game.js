@@ -234,29 +234,38 @@ scene("gameLevel0", () => {
     })
     let myText = add([
         text("Hurry UP! You need to reach the school", { fade: 0.4 }),
-        lifespan(3),
+        lifespan(5),
         pos(-300, 1000),
         scale(3)
     ])
-    wait(3, () => {
+
+    add([
+        text("press SPACE to jump", { fade: 0.8 }), 
+        pos(-300, 600),
+        scale(3)
+    ])
+
+    wait(5, () => {
         add([
-            text("Press a to fire.", { fade: 0.4 }),
+            text("Press A to fire.", { fade: 0.4 }),
             lifespan(3),
-            pos(-200, 1000),
+            pos(300, 1000),
             scale(3)
         ])
     })
+    
+
     wait(5, () => {
         add([
             text("Shoot them two times", { fade: 0.8 }),
-            lifespan(3),
+            
             pos(600, 600),
             scale(3)
         ])
     })
     let anotherText = add([
         text("Fall down and go to the next level."),
-        pos(3177, 1000),
+        pos(2900, 1000),
         scale(3)
     ])
     // Defining some game constants for our player : 
@@ -466,29 +475,53 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("Remember: as a dyslexic you misread what is written."),
         pos(50, 60),
-        lifespan ( 10, {fade : 0.8}),
-        scale(3),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
         color (255, 255, 255),
         ])
     })
     wait(10, () => {
         add([text("the letters 'p', 'q', 'd' and 'b' are reversed and the"),
         pos(50, 100),
-        lifespan ( 10, {fade : 0.8}),
-        scale(2.8),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
         color (255, 255, 255),
         ])
     })
 
     wait(10, () => {
         add([text("sentences are disconnected where they should be connected"),
-        pos(22, 140),
-        lifespan ( 10, {fade : 0.8}),
-        scale(2.8),
+        pos(50, 140),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
         color (255, 255, 255),
         ])
     })
    
+    wait(10, () => {
+        add([text("HURRY UP!"),
+        pos(870, 200),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
+        color (255, 255, 255),
+        ])
+    })
+    wait(10, () => {
+        add([text("write the sentence before "),
+        pos(870, 230),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
+        color (255, 255, 255),
+        ])
+    })
+    wait(10, () => {
+        add([text("time runs out!"),
+        pos(870, 260),
+        lifespan ( 20, {fade : 0.8}),
+        scale(2),
+        color (255, 255, 255),
+        ])
+    })
     // Our Map is here : 
     let secondMap = [
         "!                          !",
@@ -614,7 +647,7 @@ scene("gameLevel1", () => {
             right = true
             destroy(incorrectWords);
             add([text("Go to the door to go to the next Level"),
-            pos(300, 100),
+            pos(300, 400),
             lifespan(6, { fade: 0.1 }),
             scale(2),
             color(255, 255, 255,)
@@ -749,7 +782,7 @@ scene("gameLevel2", () => {
         pos((width()/2) - 450, 100,{fade:0.8}),
         scale(2)
     ])
-    wait(3,()=>{
+    wait(6,()=>{
         destroy(thisText)
         let thisTextToo = add([
             text("choose the most appropriate title for the image."),
@@ -776,14 +809,14 @@ scene("gameLevel2", () => {
     ])
     //   You would still be able to go to the next level no matter if the answer is true or false.
 
-wait(5,()=>{
+wait(9,()=>{
     let skull = add([
         sprite("vanita"),
         scale(0.8),
         pos((width() / 2) - 150, (height() / 2) - 200),
         "vanita",
     ])
-    wait(1, () => {
+    wait(0.7, () => {
         destroy(skull)
     })
 wait(4, () => {
@@ -831,6 +864,12 @@ wait(4, () => {
                 text("you were supposed to lose"),
                 pos(20, 350),
                 scale(3),
+                
+            ])
+            add([
+                text("press RIGHT to reach the next level"),
+                pos(80, 630),
+                scale(2),
                 
             ])
 
@@ -942,6 +981,12 @@ wait(4, () => {
                 scale(3),
                 color(255,0,0)
             ])
+            add([
+                text("press RIGHT to reach the next level"),
+                pos(80, 630),
+                scale(2),
+                
+            ])
             every("thisTextToo",destroy)
             const laugh = play("laugh", {
                 volume: 0.4,
@@ -1032,6 +1077,12 @@ wait(4, () => {
                 color(255,0,0)
             ])
             add([
+                text("press RIGHT to reach the next level"),
+                pos(80, 630),
+                scale(2),
+                
+            ])
+            add([
                 sprite("vanita"),
                 pos(800, (height() / 2) - 400),
                 scale(0.8),
@@ -1115,6 +1166,12 @@ wait(4, () => {
                 
             ])
             add([
+                text("press RIGHT to reach the next level"),
+                pos(80, 630),
+                scale(2),
+                
+            ])
+            add([
                 text("Look Closely"),
                 pos(100, 100),
                 scale(3),
@@ -1187,9 +1244,10 @@ scene("gameLevel3", () => {
     wait(3, () => {
         add([text("Tell us what you see?"),
         pos((width() / 2) - 280, 100),
-        lifespan(3, { fade: 0.8 }),
+        lifespan(10, { fade: 0.8 }),
         scale(3),
-        color(255, 255, 255,)
+        color(255, 255, 255,),
+        "text1"
         ])
     })
 
