@@ -8,39 +8,39 @@ kaboom({
 });
 
 // Here we are going to load all our sounds : 
-loadSound("bg", "background.mp3");
+loadSound("bg", "assets/audio/background.mp3");
 const background = play("bg", {
     volume: 0.4,
     loop: true
 })
 // Loading our backgrounds : 
-loadSprite("background","background.jpg");
-loadSprite("background1","background1.jpg")
-loadSprite("background2","background2.jpg")
-loadSound("explosion", "explosion.wav")
-loadSound("gameover", "gameover.wav")
-loadSound("roar","roar.wav")
-loadSound("laugh","laugh.wav")
+loadSprite("background","assets/image/background.jpg");
+loadSprite("background1","assets/image/background1.jpg")
+loadSprite("background2","assets/image/background2.jpg")
+loadSound("explosion", "assets/audio/explosion.wav")
+loadSound("gameover", "assets/audio/gameover.wav")
+loadSound("roar","assets/audio/roar.wav")
+loadSound("laugh","assets/audio/laugh.wav")
 // Here we are loading all our sprites at once before making any scenes or levels : 
-loadSprite('bg', "bg.jpg")
-loadSprite("ground", "ground.png")
-loadSprite("player", "player.jpg");
-loadSprite("player2", "player_white.png");
-loadSprite("player3", "player_blue.jpg");
-loadSprite("level1", "level 1.png")
-loadSprite("door", "door.jpg")
-loadSprite("door_white", "door_white.jpg");
-loadSprite("vanita", "vanita.png")
-loadSprite("cow1", "cow.jpg");
-loadSprite("cow2", "incomprehensible cow.png")
-loadSprite("enemy1", "enemy-black.png");
-loadSprite("enemy2", "enemy.png")
-loadSprite("happyProfessorBlue", 'happyProfessor.png');
-loadSprite('angryProfessorBlue', "angryProfessorBlue.png")
-loadSprite('angryProfessorBlack', "angryProfessorBlack.jpg")
-loadSprite("happyProfessorBlack","happyProfessorBlack.jpg");
-loadSprite("angryProfessorLevel3","angryProfessorLevel3.png")
-loadSprite("candy", "candy.png")
+loadSprite('bg', "assets/image/bg.jpg")
+loadSprite("ground", "assets/image/ground.png")
+loadSprite("player", "assets/image/player.jpg");
+loadSprite("player2", "assets/image/player_white.png");
+loadSprite("player3", "assets/image/player_blue.jpg");
+loadSprite("level1", "assets/image/level 1.png")
+loadSprite("door", "assets/image/door.jpg")
+loadSprite("door_white", "assets/image/door_white.jpg");
+loadSprite("vanita", "assets/image/vanita.png")
+loadSprite("cow1", "assets/image/cow.jpg");
+loadSprite("cow2", "assets/image/incomprehensible cow.png")
+loadSprite("enemy1", "assets/image/enemy-black.png");
+loadSprite("enemy2", "assets/image/enemy.png")
+loadSprite("happyProfessorBlue", 'assets/image/happyProfessor.png');
+loadSprite('angryProfessorBlue', "assets/image/angryProfessorBlue.png")
+loadSprite('angryProfessorBlack', "assets/image/angryProfessorBlack.jpg")
+loadSprite("happyProfessorBlack","assets/image/happyProfessorBlack.jpg");
+loadSprite("angryProfessorLevel3","assets/image/angryProfessorLevel3.png")
+loadSprite("candy", "assets/image/candy.png")
 
 
 //   The game has four levels or scenes : 
@@ -78,7 +78,7 @@ go('interface');
 // Game Over scene: 
 
 scene("gameover", () => {
-    wait(3,()=>{
+    wait(5,()=>{
         go("gameLevel1")
     })
     const roar = play("roar", {
@@ -475,7 +475,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("Remember: as a dyslexic you misread what is written."),
         pos(50, 60),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -483,7 +483,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("the letters 'p', 'q', 'd' and 'b' are reversed and the"),
         pos(50, 100),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -492,7 +492,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("sentences are disconnected where they should be connected"),
         pos(50, 140),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -501,7 +501,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("HURRY UP!"),
         pos(870, 200),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -509,7 +509,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("write the sentence before "),
         pos(870, 230),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -517,7 +517,7 @@ scene("gameLevel1", () => {
     wait(10, () => {
         add([text("time runs out!"),
         pos(870, 260),
-        lifespan ( 20, {fade : 0.8}),
+        lifespan ( 90, {fade : 0.8}),
         scale(2),
         color (255, 255, 255),
         ])
@@ -846,12 +846,12 @@ wait(4, () => {
             destroy(option3Box)
             let EndingText = add([
                 text("This levels shows what the Perceptual Difficulties are"),
-                pos(20,440),
+                pos(20,420),
                 scale(2.6)
             ])
             add([
                 text("for a dyslexic person"),
-                pos(20, 460),
+                pos(20, 450),
                 scale(2.6)
             ])
             add([
@@ -863,12 +863,12 @@ wait(4, () => {
             add([
                 text("you were supposed to lose"),
                 pos(20, 350),
-                scale(3),
+                scale(2.6),
                 
             ])
             add([
                 text("press RIGHT to reach the next level"),
-                pos(80, 630),
+                pos(80, 485),
                 scale(2),
                 
             ])
@@ -876,7 +876,7 @@ wait(4, () => {
             add([
                 text("the right answer is Beauty"),
                 pos(20, 380),
-                scale(3),
+                scale(2.6),
             ])
 
             add([
@@ -961,12 +961,12 @@ wait(4, () => {
             destroy(option3Box)
             let endingText = add([
                 text("This level shows what the Perceptual Difficulties are"),
-                pos(10,400),
+                pos(10, 420),
                 scale(2.6)
             ])
             add([
                 text("for a dyslexic person"),
-                pos(20, 460),
+                pos(20, 450),
                 scale(2.6)
             ])
             add([
@@ -983,7 +983,7 @@ wait(4, () => {
             ])
             add([
                 text("press RIGHT to reach the next level"),
-                pos(80, 630),
+                pos(80, 485),
                 scale(2),
                 
             ])
@@ -1038,12 +1038,12 @@ wait(4, () => {
             destroy(option3Box)
             let EndingText = add([
                 text("This level shows what the Perceptual Difficulties are"),
-                pos(20,440),
+                pos(20,420),
                 scale(2.6)
             ])
             add([
                 text("for a dyslexic person"),
-                pos(20, 460),
+                pos(20, 450),
                 scale(2.6)
             ])
 
@@ -1078,7 +1078,7 @@ wait(4, () => {
             ])
             add([
                 text("press RIGHT to reach the next level"),
-                pos(80, 630),
+                pos(80, 485),
                 scale(2),
                 
             ])
@@ -1138,12 +1138,12 @@ wait(4, () => {
             destroy(option3Box)
             let EndingText = add([
                 text("This level shows what the Perceptual Difficulties are"),
-                pos(20,440),
+                pos(20,420),
                 scale(2.6)
             ])
             add([
                 text("for a dyslexic person"),
-                pos(20, 460),
+                pos(20, 450),
                 scale(2.6)
             ])
 
@@ -1167,7 +1167,7 @@ wait(4, () => {
             ])
             add([
                 text("press RIGHT to reach the next level"),
-                pos(80, 630),
+                pos(80, 485),
                 scale(2),
                 
             ])
